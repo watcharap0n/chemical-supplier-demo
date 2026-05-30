@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, Facebook, FileText, MessageCircle, Package, Truck } from "lucide-react";
+import { ArrowLeft, FileText, MessageCircle, Package, Share2, Truck } from "lucide-react";
 import { StockBadge } from "@/components/StockBadge";
 import { contact, getProductBySlug, products } from "@/lib/data";
 
@@ -104,7 +104,7 @@ export default async function ProductDetailPage({ params }: Props) {
                 href={contact.facebookUrl}
                 className="inline-flex h-11 items-center justify-center gap-2 rounded border border-slate-300 px-4 text-sm font-semibold text-slate-900 transition hover:border-blue-700 hover:text-blue-700"
               >
-                <Facebook size={17} /> Facebook
+                <Share2 size={17} /> Facebook
               </a>
               <a
                 href={`tel:${contact.phone.replace(/[^\d+]/g, "")}`}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Facebook, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Mail, MapPin, MessageCircle, Phone, Share2 } from "lucide-react";
 import { contact, site } from "@/lib/data";
 
 export function Footer() {
@@ -42,7 +42,7 @@ export function Footer() {
               <MessageCircle size={16} /> LINE {contact.line}
             </a>
             <a href={contact.facebookUrl} className="flex items-center gap-2 hover:text-white">
-              <Facebook size={16} /> Facebook
+              <Share2 size={16} /> Facebook
             </a>
             <span className="flex items-start gap-2">
               <MapPin size={16} className="mt-0.5 shrink-0" /> {contact.address}
